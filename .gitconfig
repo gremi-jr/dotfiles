@@ -1,3 +1,46 @@
 [user]
-	email = timo@timogremler.de
 	name = Timo Gremler
+	email = timo@timogremler.de
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[pack]
+	threads = 0
+[alias]
+	aa = add -A
+	##########
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cam = commit -am
+	cem = commit --allow-empty -m
+	cd = commit --amend
+	cad = commit -a --amend
+	ced = commit --allow-empty --amend
+	##########
+	ps = push
+	psf = push -f
+	psu = push -u
+	pst = push --tags
+	##########
+	pso = push origin
+	psao = push --all origin
+	psfo = push -f origin
+	psuo = push -u origin
+	##########
+	psom = push origin master
+	psaom = push --all origin master
+	psfom = push -f origin master
+	psuom = push -u origin master
+	##########
+	st = status
+	co = checkout
+	br = branch
+	pl = pull
