@@ -44,3 +44,4 @@
 	co = checkout
 	br = branch
 	pl = pull
+        lo = log --pretty=format:"%h - %an, %ar : %s"
