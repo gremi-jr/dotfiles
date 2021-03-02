@@ -41,7 +41,13 @@
 	psuom = push -u origin master
 	##########
 	st = status
+        rv = remote -v
 	co = checkout
 	br = branch
 	pl = pull
         lo = log --pretty=format:'%h - %an, %ar : %s'
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
